@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bc-backg:#ffffff;
+    --bc-header: #ff6900;
+    --bc-footer: #1a1a1a;
+}
+
+/*Utilitis*/
+header {
+    min-height: 80px;
+    background-color: var(--bc-header);
+}
