@@ -4,17 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    position: relative;
+}
+
 :root {
     --bc-backg:#ffffff;
     --bc-header: #ff6900;
     --bc-footer: #1a1a1a;
 }
 
-.clearfix::after {
-    content: '';
-    clear: both;
-    display: table;
-}
 
 .he_left {
     display: flex;
@@ -26,12 +25,14 @@
 .he_right {
     display: flex;
     justify-content: flex-end;
-    width: 40%;  
+    width: 40%; 
+    padding-bottom: 0; 
 }
 
 a {
     text-decoration: none;
     padding: 0.5rem;
+    color: white;
 }
 
 .boolean_l {
@@ -45,58 +46,90 @@ header a {
 
 
 
+
 /*Utilitis*/
 header {
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
     min-height: 80px;
     background-color: var(--bc-header);
     padding: 0 10%;
+    z-index: 100;
+}
+
+h4 {
+    color: red;
+}
+
+.line_trh{
+    color: black;
+    text-decoration:line-through;
+}
+
+.span_red {
+    position: absolute;
+    top: 500px;
+    background-color: red;
+    color: white;
+    padding: 0.2rem 0.2rem;
+     
+}
+
+.span_green {
+    position: absolute;
+    top: 500px;
+    left:45px;
+    background-color:green;
+    color: white;
+    padding: 0.2rem 0.2rem;
+}
+
+.cf .span_green {
+    left:0px;  
 }
 /*Header*/
 
 main {
     position: absolute;
-    left: 0;
-    right: 0;
-    height: 1700px;
+    top: 130px;
+    left: 10%;
     width: 80%;
     margin: auto;
 }
 
-main>div {
-    display: flex;
-    align-items: flex-end;
+.container {
+    position: relative;
     float: left;
     height: 600px;
     width: calc((100% - 60px) /12 *4);
-    margin-top: 60px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 50px;
 }
 
 .container_bottom {
-    display: flex;
-    align-items: flex-end;
-    background-color: black;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0px;
     height: 50px;
-    width: 100%;
+    padding-top: 10px;
 }
-
-.ca:hover {
+/*Region main*/
+.ca {
     background-image: url(../img/1.webp);
     background-size: 100%;
     background-repeat: no-repeat;
-    position: absolute;
     z-index: 0;
 }
 
-.ca {
+.ca:hover {
     background-image: url(../img/1b.webp);
     background-size: 100%;
     background-repeat: no-repeat;
-    position: relative;
     z-index: 10; 
 }
 
@@ -106,11 +139,25 @@ main>div {
     background-repeat: no-repeat;
     z-index: 0;
 }
+
+.cb:hover {
+    background-image: url(../img/2b.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
 .cc {
     background-image: url(../img/3.webp);
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 0;
+}
+
+.cc:hover {
+    background-image: url(../img/3b.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 10;
 }
 .cd {
     background-image: url(../img/4.webp);
@@ -119,11 +166,25 @@ main>div {
     z-index: 0;
 }
 
+.cd:hover {
+    background-image: url(../img/4b.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
 .ce {
     background-image: url(../img/5.webp);
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 0;
+}
+
+.ce:hover {
+    background-image: url(../img/5b.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 10;
 }
 .cf{
     background-image: url(../img/6.webp);
@@ -131,3 +192,44 @@ main>div {
     background-repeat: no-repeat;
     z-index: 0;
 }
+
+.cf:hover{
+    background-image: url(../img/6b.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+/*Region photos*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 1450px;
+    right: 0;
+    background-color: var(--bc-footer);
+    height: 100px;
+    width: 100%;
+    padding: 0 10%;
+}
+
+.foot_left> a  {
+    padding-top: 3rem;
+    padding-left: 0;
+    
+}
+
+.foot_left>h3 {
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+   
+}
+
+.foot_right, i { 
+    padding-top: 1rem;
+    padding-left: 0;
+    display: block;
+    color: white;
+} 
+
