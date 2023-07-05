@@ -27,6 +27,7 @@ body {
     justify-content: flex-end;
     width: 40%; 
     padding-bottom: 0; 
+    gap: 20px;
 }
 
 a {
@@ -44,7 +45,13 @@ header a {
     color: var(--bc-backg);
 }
 
-
+.heart {
+    position: absolute;
+    top: 30px;
+    right: 180px;
+    height: 30px;
+    padding: 0 px;
+}
 
 
 /*Utilitis*/
@@ -102,6 +109,9 @@ main {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     float: left;
     height: 600px;
