@@ -10,6 +10,12 @@
     --bc-footer: #1a1a1a;
 }
 
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
 .he_left {
     display: flex;
     justify-content: flex-start;
@@ -37,6 +43,8 @@ header a {
     color: var(--bc-backg);
 }
 
+
+
 /*Utilitis*/
 header {
     display: flex;
@@ -47,3 +55,79 @@ header {
     padding: 0 10%;
 }
 /*Header*/
+
+main {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1700px;
+    width: 80%;
+    margin: auto;
+}
+
+main>div {
+    display: flex;
+    align-items: flex-end;
+    float: left;
+    height: 600px;
+    width: calc((100% - 60px) /12 *4);
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container_bottom {
+    display: flex;
+    align-items: flex-end;
+    background-color: black;
+    height: 50px;
+    width: 100%;
+}
+
+.ca:hover {
+    background-image: url(../img/1.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 0;
+}
+
+.ca {
+    background-image: url(../img/1b.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 10; 
+}
+
+.cb {
+    background-image: url(../img/2.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.cc {
+    background-image: url(../img/3.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.cd {
+    background-image: url(../img/4.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.ce {
+    background-image: url(../img/5.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.cf{
+    background-image: url(../img/6.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
