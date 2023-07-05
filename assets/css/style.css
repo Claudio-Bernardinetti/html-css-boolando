@@ -10,8 +10,40 @@
     --bc-footer: #1a1a1a;
 }
 
+.he_left {
+    display: flex;
+    justify-content: flex-start;
+    width: 40%;
+   
+}
+
+.he_right {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;  
+}
+
+a {
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.boolean_l {
+    text-align: center;
+    size: 20%;
+}
+
+header a {
+    color: var(--bc-backg);
+}
+
 /*Utilitis*/
 header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     min-height: 80px;
     background-color: var(--bc-header);
+    padding: 0 10%;
 }
+/*Header*/
